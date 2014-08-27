@@ -67,7 +67,3 @@ height = 1.85
 bmi = weight/(height**2)
 bmi = round(bmi,10)
 print(bmi)
-
-x = 3
-x = float(x)
-print(x)
