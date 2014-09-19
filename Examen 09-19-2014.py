@@ -7,7 +7,8 @@ suma del número anterior y el que el usuario capturo.
 
 #Ejercicio 1
 num1 = 56.78
-num2 = int(num1)
+rnum1 = round(num1, 0)
+num2 = int(rnum1)
 print("If we round down %s we get %s" % (num1,num2))
 inum = int(input("Please input a number. "))
 sum56 = inum + num2
