@@ -39,14 +39,10 @@ def calculatescore():
                 winner = "X"
             elif score == "OOO":
                 winner = "O"
-    if (base[0][0] + base[1][1] + base[2][2]) == "XXX":
+    if (base[0][0] + base[1][1] + base[2][2]) == "XXX" or base[0][2] + base[1][1] + base[2][0] == "XXX":
         winner = "X"
-    elif (base[0][0] + base[1][1] + base[2][2]) == "OOO":
-        winner = "O"
-    elif (base[0][2] + base[1][1] + base[2][0]) == "XXX":
-        winner = "X"       
-    elif (base[0][2] + base[1][1] + base[2][0]) == "OOO":
-        winner = "O"       
+    elif (base[0][0] + base[1][1] + base[2][2]) == "OOO" or base[0][2] + base[1][1] + base[2][0] == "OOO":
+        winner = "O"   
     return winner
 
 
