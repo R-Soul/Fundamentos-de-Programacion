@@ -28,7 +28,7 @@ for item in byeduplicates:
     for line in findhere2:
         if cond:
             counter += 1
-            print(str((counter/len(byeduplicates))*100)[0:4]+"% Done")
+            print(str((counter/len(byeduplicates))*100)[0:5]+"% Done")
             extractid.write(item + "," + line)
             cond = False
             break
